@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Contact | Dimitris Papakyriazis</title>
+    <meta
+      name="description"
+      content="Request contact with classical pianist Dimitris Papakyriazis for bookings, collaborations, and concert invitations."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Primary">
+        <p class="brand">Dimitris Papakyriazis</p>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#concerts">Concerts</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="index.html#social">Social</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero" aria-labelledby="contact-page-title">
+        <p class="hero-kicker">Bookings & Collaborations</p>
+        <h1 id="contact-page-title">Request Contact</h1>
+        <p class="hero-text">Complete the form below and your request will be prepared for follow-up.</p>
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section class="section contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <h2 id="contact-title">Contact Information</h2>
+          <p>For concerts, private events, and artistic collaborations.</p>
+        </div>
+
+        <form id="contact-form" class="card" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Request details</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              maxlength="800"
+              placeholder="Tell us about your event, date, location, and any program preferences"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button" type="submit">Send Request</button>
+          <p id="contact-status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Dimitris Papakyriazis · Classical Pianist</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
