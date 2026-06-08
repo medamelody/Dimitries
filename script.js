@@ -99,24 +99,29 @@ function renderSocialLinks() {
 }
 
 function loadLinks() {
-    const ensureInstagramLink = (links) => {
+  const ensureInstagramLink = (links) => {
     const hasInstagram = links.some((link) => link.url === instagramAccountUrl);
     if (!hasInstagram) {
       links.unshift({ id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl });
     }
-
-    const ensureyoutubeLink = (links) => {
+   return links;
+  };
+  
+function loadLinks() {
+  const ensureyoutubeLink = (links) => {
     const hasYoutube = links.some((link) => link.url === youtubeUri);
     if (!hasYoutube) {
       links.unshift({ id: crypto.randomUUID(), platform: 'Youtube', url: youtubeUri });
     }
+    return links;
+  };
 
-    const ensurefacebookLink = (links) => {
+function loadLinks() {
+  const ensurefacebookLink = (links) => {
     const hasfacebook = links.some((link) => link.url === facebookUrl);
     if (!hasfacebook) {
       links.unshift({ id: crypto.randomUUID(), platform: 'Facebook', url: facebookUrl });
-    }
-
+  }
     return links;
   };
 
