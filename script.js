@@ -108,7 +108,13 @@ function loadLinks() {
     const ensureyoutubeLink = (links) => {
     const hasYoutube = links.some((link) => link.url === youtubeUri);
     if (!hasYoutube) {
-      links.unshift({ id: crypto.randomUUID(), platform: 'Instagram', url: youtubeUri });
+      links.unshift({ id: crypto.randomUUID(), platform: 'Youtube', url: youtubeUri });
+    }
+
+    const ensurefacebookLink = (links) => {
+    const hasfacebook = links.some((link) => link.url === facebookUrl);
+    if (!hasfacebook) {
+      links.unshift({ id: crypto.randomUUID(), platform: 'Facebook', url: facebookUrl });
     }
 
     return links;
