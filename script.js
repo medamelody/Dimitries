@@ -15,7 +15,7 @@ const YoutubeAccountUrl = 'https://www.facebook.com/profile.php?id=1000084583550
 
 const defaultLinks = [
   { id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl },
-  { id: crypto.randomUUID(), platform: 'YouTube', url: 'YoutubeAccountUrl' },
+  { id: crypto.randomUUID(), platform: 'YouTube', url: YoutubeAccountUrl },
   { id: crypto.randomUUID(), platform: 'Facebook', url: 'https://facebook.com/' },
 ];
 
