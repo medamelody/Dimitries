@@ -11,12 +11,13 @@ if (yearElement) {
 
 const storageKey = 'pianist.social.links';
 const instagramAccountUrl = 'https://www.instagram.com/dhmhtrhs._pap?igsh=MXBtY256ejhrMGtrcA==';
-const YoutubeAccountUrl = 'https://www.facebook.com/profile.php?id=100008458355039';
+const facebookUrl = 'https://www.facebook.com/profile.php?id=100008458355039';
+const youtubeUri = 'https://www.youtube.com/@DimitriosPapakyriazis';
 
 const defaultLinks = [
   { id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl },
-  { id: crypto.randomUUID(), platform: 'YouTube', url: YoutubeAccountUrl },
-  { id: crypto.randomUUID(), platform: 'Facebook', url: 'https://facebook.com/' },
+  { id: crypto.randomUUID(), platform: 'YouTube', url: youtubeUri },
+  { id: crypto.randomUUID(), platform: 'Facebook', url: facebookUrl },
 ];
 
 let socialLinks = loadLinks();
