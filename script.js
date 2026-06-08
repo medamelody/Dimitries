@@ -105,9 +105,21 @@ function loadLinks() {
       links.unshift({ id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl });
     }
 
+    const ensureyoutubeLink = (links) => {
+    const hasYoutube = links.some((link) => link.url === youtubeUri);
+    if (!hasYoutube) {
+      links.unshift({ id: crypto.randomUUID(), platform: 'Instagram', url: youtubeUri });
+    }
+
     return links;
   };
 
+
+
+
+
+
+  
   try {
     const stored = localStorage.getItem(storageKey);
     if (!stored) {
