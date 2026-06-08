@@ -99,7 +99,7 @@ function renderSocialLinks() {
 }
 
 function loadLinks() {
-  const ensureInstagramLink = (links) => {
+    const ensureInstagramLink = (links) => {
     const hasInstagram = links.some((link) => link.url === instagramAccountUrl);
     if (!hasInstagram) {
       links.unshift({ id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl });
