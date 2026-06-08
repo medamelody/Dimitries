@@ -20,6 +20,12 @@ const defaultLinks = [
 
 let socialLinks = loadLinks();
 if (socialLinksList && socialEmpty) {
+
+    if (socialLinks.length === 0) {
+    // Reset if no links found
+    localStorage.removeItem(storageKey);
+    socialLinks = loadLinks();
+  }
   renderSocialLinks();
 }
 
