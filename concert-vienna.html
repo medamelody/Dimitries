@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vienna Chamber Series | Dimitris Papakyriazis</title>
+    <meta name="description" content="Photos and videos from the Vienna Chamber Series by Dimitris Papakyriazis." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Primary">
+        <p class="brand">Dimitris Papakyriazis</p>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#concerts" aria-current="page">Concerts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#social">Social</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="hero-kicker">Concert Poland</p>
+        <h1 id="page-title">Classical Music</h1>
+        <p class="hero-text">May 2026 </p>
+        <a class="button" href="index.html#concerts">← Back to Concerts</a>
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section class="section gallery-section" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <h2 id="photos-title">Photos</h2>
+          <p>Concert highlights captured live.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Replace src with your own image paths, e.g. assets/images/vienna-1.jpg -->
+          <figure class="gallery-item">
+            <img
+              src="https://i.postimg.cc/pdHFVYwB/IMG-20260607-WA0025.jpg"
+              alt="Vienna Chamber Series performance"
+              loading="lazy"
+            />
+          </figure>
+
+          <!-- Add more photos below. Copy the <figure> block and change src/alt -->
+          <!--
+          <figure class="gallery-item">
+            <img src="assets/images/vienna-2.jpg" alt="Description" loading="lazy" />
+          </figure>
+          -->
+        </div>
+      </section>
+
+      <section class="section gallery-section" aria-labelledby="videos-title">
+        <div class="section-heading">
+          <h2 id="videos-title">Videos</h2>
+          <p>Selected excerpts from the evening.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Local video example -->
+          <!--
+          <figure class="gallery-item gallery-item--video">
+            <video controls preload="metadata">
+              <source src="assets/videos/vienna-1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+          -->
+
+          <!-- YouTube embed example — replace VIDEO_ID with your actual ID -->
+          <!--
+          <figure class="gallery-item gallery-item--video">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Vienna Chamber Series excerpt"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </figure>
+          -->
+
+          <p class="muted">Videos coming soon.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Dimitris Papakyriazis · Classical Pianist</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
