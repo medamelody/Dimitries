@@ -120,11 +120,6 @@ function loadLinks() {
     return links;
   };
 
-
-
-
-
-
   
   try {
     const stored = localStorage.getItem(storageKey);
