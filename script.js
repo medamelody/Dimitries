@@ -10,7 +10,7 @@ if (yearElement) {
 }
 
 const storageKey = 'pianist.social.links';
-const instagramAccountUrl = 'https://www.instagram.com/dhmhtrhs._pap?igsh=MXBtY256ejhrMGtrcA==';
+const instagramAccountUrl = 'https://www.instagram.com/papakyriazis.piano?utm_source=qr';
 
 const defaultLinks = [
   { id: crypto.randomUUID(), platform: 'Instagram', url: instagramAccountUrl },
